@@ -28,7 +28,7 @@ export default function Checkout({ ref }) {
     const postal = formData.get("postal");
     const city = formData.get("city");
 
-    const response = await fetch("http://localhost:3000/orders", {
+    const response = await fetch("/orders.json", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
